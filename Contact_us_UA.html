@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumberStudio™</title>
+    <link rel="icon" href="NumberStudio.png" type="image/png">
+</head>
+<body>
+    <div class="navbar">
+        <h1 class="logo">NumberStudio™</h1>
+        
+        <nav class="navbar2">
+            <ul>
+                <li><a href="NumberStudioUA.html">Додому</a></li>
+                <li><a class="contacts" href="Contact_us_UA.html">Контакти</a></li>
+                <li><a href="">Проєкти</a></li>
+                <li><button class="Lang" onclick="toggleLang()">Мови ></button></li>
+                <li class="lang-option hidden"><a class="UAR" href="NumberStudioUA.html">UA🇺🇦</a></li>
+                <li class="lang-option hidden"><a href="NumberStudio.html">ENG🇺🇸</a></li>
+            </ul>
+        </nav>
+    </div>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+
+        body, html {
+         margin: 0;
+         padding: 0;
+         background-color: rgb(39, 45, 45);
+         margin-top:100px;
+        }
+        
+    
+        .navbar{
+            background-color: #333;
+            color: white;
+            padding: 10px 30px;
+            justify-content: space-between;
+            font-family: Arial, sans-serif;
+            align-items: center;
+            display: flex;
+            position:fixed;
+            width:100%;
+            height:100px;
+            top:0;
+            left:0;
+            z-index: 9999;
+
+            
+        }
+        .navbar .logo{
+            color:#ffcc00;
+        }
+        .navbar2 ul{
+            list-style-type: none;
+            padding: 0;
+            margin: 0px;
+        
+        }
+        .lang-option{
+            display:inline;
+        }
+        .lang-option.hidden{
+            display:none;
+        }
+        .navbar2 li{
+            display: inline;
+            margin: 0 15px;
+        }
+        .navbar2 a{
+            color:white;
+            text-decoration: none;
+            font-size:larger;
+        }
+        .navbar2 a:hover{
+            text-decoration-line: underline;
+            font-weight: 700;
+            transition: 0.3s ease;
+            color: #ffcc00;
+        }
+        .Lang{
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: larger;
+
+        }
+        .Lang:hover{
+            color: #ffcc00;
+            transition: 0.3s ease;
+            text-decoration: underline;
+            font-size: 700;
+        }
+        .navbar2 .Home_page{
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+        .navbar2 .UAR{
+            text-decoration: underline;
+            color: #ffcc00;
+        }
+ </style>
+  <section class="contact-section">
+    <div class="contact-map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.826440377978!2d-74.01308708459461!3d40.71277597933105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a197c06b7cb%3A0x40a06c78f79e5de6!2z0JLRgdC10YHQstGW0YLQvdGW0Lkg0YLQvtGA0LPQvtCy0LjQuSDRhtC10L3RgtGAIDE!5e0!3m2!1suk!2sua!4v1746836892745!5m2!1suk!2sua"
+        width="400"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="contact-form">
+      <h2>Контактна форма</h2>
+      <p>Ви можете зв'язатися з нами, заповнивши цю форму.</p>
+      
+      <form action="/messages" method="POST">
+        <input name="username" ...>
+        <input name="email" ...>
+        <textarea name="text" ...></textarea>
+      </form>
+    </div>
+  </section>
+  <style>
+  .contact-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    padding: 80px 30px;
+    background-color: #1c1f1f;
+    font-family: Arial, sans-serif;
+  }
+
+  .contact-map iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .contact-form {
+    max-width: 400px;
+    width: 100%;
+    color: white;
+  }
+
+  .contact-form h2 {
+    color: #ffcc00;
+    margin-bottom: 10px;
+  }
+
+  .contact-form p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 20px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #888;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    color: #000;
+  }
+
+  .contact-form button {
+    background-color: #e25c2a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-form button:hover {
+    background-color: #c84b1e;
+  }
+  </style>
+    
+
+
+ <script>
+    function toggleLang() {
+        const langOptions = document.querySelectorAll('.lang-option');
+        langOptions.forEach(option => {
+            option.classList.toggle('hidden');
+        });
+    }
+ </script>
+  <footer class="footer">
+    <p>© 2024 Number Studio.</p>
+    
+    
+    <div class="social_medias">
+       <a href="http://www.youtube.com/@NUMBERSTUD1O" class="yt-float" target="_blank">
+           <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube"/>
+       </a>
+       <a href="https://discord.gg/tDUHFE2cUg" class="ds-float" traget="_blank">
+           <img src="https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg" alt="Discord"/>
+       </a>
+    </div>         
+        
+    
+</footer>
+<style>
+   .footer{
+       background-color: #333;
+       color: white;
+       padding: 15px 30px;
+       justify-content: space-between;
+       font-family: Arial, sans-serif;
+       align-items: center;
+       display: flex;
+       position:fixed;
+       width:100%;
+       height:70px;
+       bottom: 0;
+   }
+   .social_medias{
+       display:flex;
+       gap:15px;
+   }
+   .social_medias img{
+       width: 30px;
+       height: 30px;
+       border-radius: 6px;
+       transition: transform 0.3s ease;
+   }
+   .social_medias img:hover{
+       transform: scale(1.1);
+   }
+   
+
+</style>
+
+</body>
+</html>

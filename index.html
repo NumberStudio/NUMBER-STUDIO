@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Number Studio™</title>
+        <link rel="icon" href="NumberStudio.png" type="image/png">
+    </head>
+    <body>
+        <div class="navbar">
+            <h1 class="logo">Number Studio™</h1>
+            
+            <nav class="navbar2">
+                <ul>
+                    <li><a class="Home_page" href="NumberStudioUA.html">Home</a></li>
+                    <li><a href="Contact_us.html">Contact us</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><button class="Lang" onclick="toggleLang()">Language ></button></li>
+                    <li class="lang-option hidden"><a href="NumberStudioUA.html">UA🇺🇦</a></li>
+                    <li class="lang-option hidden"><a class="ENGL" href="NumberStudio.html">ENG🇺🇸</a></li>
+                </ul>
+            </nav>
+        </div>
+        <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+            }
+            
+
+            body, html {
+             margin: 0;
+             padding: 0;
+             background-color: whitesmoke;
+            }
+            
+        
+            .navbar{
+                background-color: #333;
+                color: white;
+                padding: 10px 30px;
+                justify-content: space-between;
+                font-family: Arial, sans-serif;
+                align-items: center;
+                display: flex;
+                position:fixed;
+                width:100%;
+                height:100px;
+                top:0;
+                left:0;
+                z-index: 9999;
+
+                
+            }
+            .navbar .logo{
+                color:#ffcc00;
+            }
+            .navbar2 ul{
+                list-style-type: none;
+                padding: 0;
+                margin: 0px;
+            
+            }
+            .lang-option{
+                display:inline;
+            }
+            .lang-option.hidden{
+                display:none;
+            }
+            .navbar2 li{
+                display: inline;
+                margin: 0 15px;
+            }
+            .navbar2 a{
+                color:white;
+                text-decoration: none;
+                font-size:larger;
+            }
+            .navbar2 a:hover{
+                text-decoration-line: underline;
+                font-weight: 700;
+                transition: 0.3s ease;
+                color: #ffcc00;
+            }
+            .Lang{
+                background-color: #333;
+                color: white;
+                border: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-size: larger;
+
+            }
+            .Lang:hover{
+                color: #ffcc00;
+                transition: 0.3s ease;
+                text-decoration: underline;
+                font-size: 700;
+            }
+            .navbar2 .Home_page{
+                text-decoration: underline;
+                color: #ffcc00;
+            }
+            .navbar2 .ENGL{
+                text-decoration: underline;
+                color: #ffcc00;
+            }
+     </style>
+
+     <script>
+        function toggleLang() {
+            const langOptions = document.querySelectorAll('.lang-option');
+            langOptions.forEach(option => {
+                option.classList.toggle('hidden');
+            });
+        }
+     </script>
+
+     <section class="introduction">
+        <div class="intro-content">
+            <h1>Welcome to <span class="highlight">Number Studio™</span></h1>
+            <hr>
+            <p class="dot">.</p>
+            <p><span class="highlight">Number Studio™</span> — is a group of developers who is making games and exstention to them.</p>
+            <p>We strive to create quality content that brings joy and satisfaction to our users.</p>
+            <p class="dot">/</p>
+            <p>One of our project is <span class="highlight"><em>"Long Island city"</em> </span> is a cyber-country created on Minecraft server back in December of 2022.</p>
+            <p><strong><em><span class="highlight">Get to know:</span></em></strong></p>
+            <p class="dot">.</p>
+            <button class="server_connect" onclick="LongIslandCity()">Long Island city</button>
+        </div>
+     </section>
+        
+     
+     <style>
+        .introduction{
+            position: relative;
+            background-image: url(https://www.intermaxindia.com/wp-content/uploads/2023/06/datacenter1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            color:white;
+            justify-content: center;
+            padding-top: 90px;
+        }
+
+        .intro-content{
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px 40px;
+            border-radius: 10px;
+            text-align: left;
+            color:rgb(255, 255, 255);
+            max-width: 900px;
+            font-family: 'Segoe UI', sans-serif;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+        }
+        .intro-content h1{
+            font-size: 43px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .intro-content .highlight{
+            color: #ffcc00;
+            font-weight: bold;
+        }
+        .intro-content p{
+            font-size: 20px;
+            margin-bottom: 2px;
+            line-height: 1.6;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+        .server_connect{
+            background-color: #ffcc00;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: larger;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            align-self: center;
+        }
+        .server_connect:hover{
+            background-color: #e6b800;
+        }
+        .dot{
+            visibility: hidden;
+        }
+           
+     </style>
+     <script>
+        function LongIslandCity() {
+            window.location.href = "https://long-island.mozellosite.com/";
+           
+        }
+     </script>
+    
+     <footer class="footer">
+         <p>© 2024 Number Studio.</p>
+         
+         
+         <div class="social_medias">
+            <a href="http://www.youtube.com/@NUMBERSTUD1O" class="yt-float" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube"/>
+            </a>
+            <a href="https://discord.gg/tDUHFE2cUg" class="ds-float" traget="_blank">
+                <img src="https://static.vecteezy.com/system/resources/previews/006/892/625/non_2x/discord-logo-icon-editorial-free-vector.jpg" alt="Discord"/>
+            </a>
+         </div>         
+             
+         
+    </footer>
+    <style>
+        .footer{
+            background-color: #333;
+            color: white;
+            padding: 15px 30px;
+            justify-content: space-between;
+            font-family: Arial, sans-serif;
+            align-items: center;
+            display: flex;
+            position:fixed;
+            width:100%;
+            height:70px;
+            bottom: 0;
+        }
+        .social_medias{
+            display:flex;
+            gap:15px;
+        }
+        .social_medias img{
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            transition: transform 0.3s ease;
+        }
+        .social_medias img:hover{
+            transform: scale(1.1);
+        }
+        
+     
+     </style>
+ </body> 
+</html>
